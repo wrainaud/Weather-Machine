@@ -1,6 +1,6 @@
 <!-- William Rainaud
   Rutgers Coding Bootcamp 
-  Random Project - GifTastic -->
+  Random Project - Weather Machine -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,63 +11,89 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Wheather</title>
+    <title>Weather App</title>
 
     <!-- Favicon -->
     <!-- <link rel="icon" type="image/png" href="" /> -->
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-    <!-- Main Styles -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <!-- Bootswatch Theme Styles -->
+   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/darkly/bootstrap.min.css">
+
+    <!-- Additional Styles -->
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
 
-	
-	<div class="container-fluid">	
-		<div class="row">
-			<div class="col-sm-12">	
-
-				<!-- Page Title -->		
-				<h1 class="mainTitle">Wheather</h1>
-
-				<!-- Input Form -->
-				<form id="rapper-form">
-	      			<label for="rapper-input">Add a Rapper: </label>
-	      				<input type="label" id="rapper-input"></input>
-	      				<input id="addRapper" value="Add" type="submit" class="btn-warning"></input>
-	    		</form>
-
-	    	</div>
-	    </div>
-	</div>	
-
-		<!-- Button Container -->
-    	<div class="row">
-			<div class="col-sm-6">	
-				<div id="rapperButtons" class="well well-lg"></div>
-			</div>
-    	
-
-		<!-- Gifs Section -->
-			<div class="col-sm-6">	
-				<div id="gifs-appear-here" class="well well-lg"></div>
-			</div>
+	<div class="container">
+		<!-- Page Title -->	
+		<div class="jumbotron">
+	  		<h1>Weather App</h1>
+	  		<h3>by William Rainaud</h3>
 		</div>
+		
+		<div class="row">
+			<!-- Location Panel -->
+			<div class="col-sm-3">
+				<div class="panel panel-default">
+		  			<div class="panel-heading">Location</div>
+		  			<div class="panel-body" id="location"></div>
+		    	</div>
+		    </div>
+
+			<!-- Current Forecast Panel -->
+			<div class="col-sm-3">
+				<div class="panel panel-default">
+		  			<div class="panel-heading">Current Forecast</div>
+		  			<div class="panel-body" id="current-forecast"></div>
+		    	</div>
+		    </div>
+
+			<!-- Temperature & Humidity Panel -->
+			<div class="col-sm-3">
+				<div class="panel panel-default">
+		  			<div class="panel-heading">Temperature & Humidity</div>
+		  			<div class="panel-body" id="temperature"> Panel content</div>
+		  			<div class="panel-body" id="humidity"></div>
+		    	</div>
+		    </div>
+
+			<!-- 5-Day Forecast Panel -->
+			<div class="col-sm-3">
+				<div class="panel panel-default">
+		  			<div class="panel-heading">5-Day Forecast Panel</div>
+		  			<div class="panel-body" id="five-day-forecast"></div>
+		    	</div>
+		    </div>
+		</div>
+
+		<!-- Footer -->
+		<footer> 
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xs-12 text-center">
+						© Copyright 2017 <a href="https://wrainaud.github.io/Responsive-Portfolio/" target="_blank">William J. Rainaud</a> <br/>
+		       		</div>
+				</div>
+			</div>		
+		</footer>
 	</div>
 
-		<!-- Footer start here -->
-	<footer> 
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="col-xs-12 text-center">
-					© Copyright 2017 <a href="https://wrainaud.github.io/Responsive-Portfolio/" target="_blank">William J. Rainaud</a> <br/>
-	       		</div>
-			</div>
-		</div>		
-	</footer>
+	<!-- Optional jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<!-- Optional Popper.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+	<!-- Optional Minified Bootstrap.js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+	<!-- Javascript File -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+
 
 
 </body>
